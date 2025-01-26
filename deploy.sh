@@ -22,6 +22,7 @@ npm install -g typescript
 echo "Cloning repositories..."
 git clone https://github.com/Discord-Activity-Planify/project-service.git
 git clone https://github.com/Discord-Activity-Planify/file-service.git
+git clone https://github.com/Discord-Activity-Planify/discord-auth-service.git
 
 # Navigate to the file-service directory and install dependencies
 echo "Navigating to file-service directory and installing dependencies..."
@@ -31,6 +32,12 @@ cd ../project-service/
 
 # Install project dependencies and Compile TypeScript code
 echo "Installing project dependencies..."
+npm i
+tsc
+cd ../discord-auth-service/
+
+# Navigate to the file-service directory and install dependencies
+echo "Installing discord-auth-service dependencies..."
 npm i
 tsc
 
@@ -46,8 +53,6 @@ echo "Configuring UFW firewall..."
 sudo ufw status
 sudo ufw enable
 sudo ufw allow ssh
-sudo ufw allow 5000
-sudo ufw allow 3000
 sudo ufw allow http
 sudo ufw allow https
 sudo ufw reload
