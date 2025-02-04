@@ -4,7 +4,7 @@ module.exports = {
       name: "notification-service",
       script: "node",
       args: "dist/index.js",
-      cwd "/home/ubuntu/notification-service",
+      cwd: "/home/ubuntu/notification-service",
       env: {
         BOT_TOKEN: "BOT_TOKEN",
         DATABASE_USERNAME: "postgres",
