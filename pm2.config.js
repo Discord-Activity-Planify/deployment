@@ -13,7 +13,7 @@ module.exports = {
         DATABASE_NAME: "project",
         DATABASE_PASSWORD: "NEW_PASSWORD"
       }
-    }
+    },
     {
       name: "project-service",
       script: "node",
