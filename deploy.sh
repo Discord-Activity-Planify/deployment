@@ -23,6 +23,7 @@ echo "Cloning repositories..."
 git clone https://github.com/Discord-Activity-Planify/project-service.git
 git clone https://github.com/Discord-Activity-Planify/file-service.git
 git clone https://github.com/Discord-Activity-Planify/discord-auth-service.git
+git clone https://github.com/Discord-Activity-Planify/notification-service.git
 
 # Navigate to the file-service directory and install dependencies
 echo "Navigating to file-service directory and installing dependencies..."
@@ -36,8 +37,14 @@ npm i
 tsc
 cd ../discord-auth-service/
 
-# Navigate to the file-service directory and install dependencies
+# Navigate to the discord-auth-service directory and install dependencies
 echo "Installing discord-auth-service dependencies..."
+npm i
+tsc
+cd ../notification-service
+
+# Navigate to the notification-service directory and install dependencies
+echo "Installing notification-service dependencies..."
 npm i
 tsc
 
