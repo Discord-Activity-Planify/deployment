@@ -20,6 +20,7 @@ module.exports = {
       args: "dist/index.js",
       cwd: "/home/ubuntu/project-service",
       env: {
+        BOT_TOKEN: "BOT_TOKEN",
         SERVER_HOST: "127.0.0.1",
         SERVER_PORT: "3001",
         DATABASE_USERNAME: "postgres",
