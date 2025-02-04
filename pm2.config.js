@@ -1,6 +1,20 @@
 module.exports = {
   apps: [
     {
+      name: "notification-service",
+      script: "node",
+      args: "dist/index.js",
+      cwd "/home/ubuntu/notification-service",
+      env: {
+        BOT_TOKEN: "BOT_TOKEN",
+        DATABASE_USERNAME: "postgres",
+        DATABASE_HOST: "127.0.0.1",
+        DATABASE_PORT: "5432",
+        DATABASE_NAME: "project",
+        DATABASE_PASSWORD: "NEW_PASSWORD"
+      }
+    }
+    {
       name: "project-service",
       script: "node",
       args: "dist/index.js",
